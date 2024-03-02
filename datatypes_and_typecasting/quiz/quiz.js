@@ -25,4 +25,5 @@ let trial = "1234";
 let trialNum = Number(trial);
 let trialBigInt = BigInt(trialNum);
 let trialBool = Boolean(trialBigInt);
-
+let combined = Boolean(BigInt(Number(trial)));
+console.log(`${typeof combined} : ${combined}`);
