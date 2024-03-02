@@ -24,5 +24,5 @@ console.log(`${typeof notDefined} : ${notDefined2}`);
 let trial = "1234";
 let trialNum = Number(trial);
 let trialBigInt = BigInt(trialNum);
-let trialBool = Boolean(trialBool);
+let trialBool = Boolean(trialBigInt);
 
