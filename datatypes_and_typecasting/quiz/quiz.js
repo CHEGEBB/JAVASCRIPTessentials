@@ -21,7 +21,7 @@ console.log(`${typeof number} : ${number2}`);
 console.log(`${typeof bigInt} : ${bigInt2}`);
 console.log(`${typeof nothing} : ${nothing2}`);
 console.log(`${typeof notDefined} : ${notDefined2}`);
-let trial = "java script is the world's most popular programming language";
+let trial = "1234";
 let trialNum = Number(trial);
 let trialBigInt = BigInt(trialNum);
 let trialBool = Boolean(trialBool);
