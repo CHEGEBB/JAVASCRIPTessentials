@@ -7,6 +7,6 @@ console.log(str.charAt(1));//e
 //the slice(beginIndex[optional]endIndex) method returns the substring from the beginIndex to the endIndex
 console.log(str.slice(0,5));//Hello
 //indexof()method returns the index of the first occurrence of a specified value
-console.log(str.indexOf(World));//
+console.log(str.indexOf('World'));//
 //split method 
-comsole.log(str.)
+console.log(str.split('.'));//["Hello World my ip address is 192","168","1","100 heard it? World?"]
