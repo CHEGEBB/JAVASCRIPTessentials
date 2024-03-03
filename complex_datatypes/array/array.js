@@ -14,7 +14,7 @@ delete languages[5];
 console.log(languages);
 //to initialize an empty array
 let ages= [];
-let names =newArray("John","Doe","Jane","Doe");
+let names =new Array("John","Doe","Jane","Doe");
 console.log(names);
 console.log(ages);
 console.log(typeof names);
