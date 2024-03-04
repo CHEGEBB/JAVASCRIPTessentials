@@ -17,3 +17,26 @@ person.surname = "Hart";
 console.log(person.name);
 console.log(person.surname);
 console.log(`name:  ${person.name}  surname:  ${person.surname} `);
+
+//library of books about JavaScript programming. 
+let library = [
+    {
+        title : "Speaking JavaScript",
+        author : "Axel Rauschmayer,",
+        pages : 460,
+    },
+    {
+        title : "Programming JavaScript Applications",
+        author : "Eric Elliott",
+        pages : 254,
+    },
+    {
+        title : "Understanding ECMAScript 6",
+        author : "Nicholas C. Zakas",
+        pages :352,
+    }
+];
+library.push({title : "Learning JavaScript Design Patterns", author : "Addy Osmani", pages : 254});
+console.log(library.title[0]);
+console.log(library.title[1]);
+console.log(library.title[2]);
