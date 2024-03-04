@@ -37,6 +37,7 @@ let library = [
     }
 ];
 library.push({title : "Learning JavaScript Design Patterns", author : "Addy Osmani", pages : 254});
-console.log(library.title[0]);
-console.log(library.title[1]);
-console.log(library.title[2]);
+console.log(library[0].title);
+console.log(library[1].title);
+console.log(library[2].title);
+console.log(library[3].title);
