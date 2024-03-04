@@ -28,3 +28,14 @@ let student3 = {
 console.log("The Student is  " + student1.name + " and the course is " + student1.course + " and the year is " + student1.year + " and the name is " + student1.name);
 console.log("The Student is  " + student2.name + " and the course is " + student2.course + " and the year is " + student2.year + " and the name is " + student2.name);
 console.log("The Student is  " + student3.name + " and the course is " + student3.course + " and the year is " + student3.year + " and the name is " + student3.name);
+//objects can also have their properties be changed that is added or deleted
+//adding a property
+student1.age = 23;
+console.log(student1.age);
+student2.interest = "web development";
+console.log(student2.interest);
+//deleting a property
+delete student1.age;
+console.log(student1.age);
+delete student2.interest;
+console.log(student2.interest);
