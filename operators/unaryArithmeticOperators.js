@@ -12,3 +12,8 @@ console.log(`${z} : ${typeof z}`);//-123 : number
 let money = 99999;
 money++;
 console.log(money);//100000
+
+//decrement -- decreases the value of operand by one
+let money2 = 100000;
+money2--;
+console.log(money2);//99999
