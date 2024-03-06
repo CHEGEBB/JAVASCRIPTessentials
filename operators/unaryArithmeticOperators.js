@@ -17,3 +17,8 @@ console.log(money);//100000
 let money2 = 100000;
 money2--;
 console.log(money2);//99999
+//when the ++ or -- is prefixed perform operation before the value is returned
+let a = 1;
+let b = ++a;
+//this is like saying b = a + 1
+console.log(b);//2
