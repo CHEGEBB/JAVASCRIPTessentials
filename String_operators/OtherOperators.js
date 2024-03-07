@@ -22,4 +22,4 @@ let person = {
     occupation : "webdeveloper",
     nationality : "kenyan",
 };
-delete person.occupation;
+delete person.occupation;//deletes the occupation field
