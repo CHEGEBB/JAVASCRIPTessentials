@@ -8,5 +8,5 @@ let newYear2 = newYear + 2024;
 console.log(newYear);
 console.log(newYear2);
 console.log(`${typeof newYear2} : ${newYear2}`);//string : Happy New Year2024
-let warm = "Hello" + " "+ "Mike" + ",Welcome to the world of programming";
+let warm = "Hello" + " "+ "Mike" + " ,Welcome to the world of programming";
 console.log(warm);
