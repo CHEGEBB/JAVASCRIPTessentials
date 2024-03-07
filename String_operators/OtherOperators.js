@@ -23,3 +23,4 @@ let person = {
     nationality : "kenyan",
 };
 delete person.occupation;//deletes the occupation field
+console.log(person);//{firstName: "John ", lastName: "W
