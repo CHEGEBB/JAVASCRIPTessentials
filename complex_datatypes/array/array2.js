@@ -72,3 +72,5 @@ console.log(jsFrameworks);//["angular","ember","vue","react","angular","vue"]
 //this joins all the items in an array into a string
 console.log(jsFrameworks.join("-"));//angular-ember-vue-react-angular-vue
 //and many more :),,,:)
+//14.delete
+
