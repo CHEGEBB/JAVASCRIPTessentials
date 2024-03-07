@@ -29,3 +29,19 @@ console.log(person);//{firstName: "John ", lastName:
 let age = 20;
 let status = (age >= 18) ? "adult" : "minor";
 console.log(status);//adult
+//precedence and associativity
+//precedence refers to the order in which operators are evaluated
+//associativity refers to the order in which operators are grouped
+//example
+let result = 10 + 20 * 30;
+console.log(result);//610
+//the multiplication operator has a higher precedence than the addition operator
+//the multiplication operator is evaluated first
+//the addition operator is evaluated last
+//the result is 610
+//the multiplication operator is left-associative
+//the addition operator is left-associative
+//the result is 610
+//the assignment operator is right-associative
+//the result is 10
+//the assignment operator is right-associative
