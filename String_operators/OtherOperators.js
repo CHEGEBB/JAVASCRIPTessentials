@@ -23,4 +23,9 @@ let person = {
     nationality : "kenyan",
 };
 delete person.occupation;//deletes the occupation field
-console.log(person);//{firstName: "John ", lastName: "W
+console.log(person);//{firstName: "John ", lastName:
+//ternary operator
+//used to assign a value to a variable based on a condition
+let age = 20;
+let status = (age >= 18) ? "adult" : "minor";
+console.log(status);//adult
