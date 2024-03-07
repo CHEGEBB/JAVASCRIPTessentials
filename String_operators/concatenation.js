@@ -7,4 +7,4 @@ let newYear = sentence + year;
 let newYear2 = newYear + 2024;
 console.log(newYear);
 console.log(newYear2);
-console.log(`${typeof newYear2} : ${newYear2}`);
+console.log(`${typeof newYear2} : ${newYear2}`);//string : Happy New Year2024
