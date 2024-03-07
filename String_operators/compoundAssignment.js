@@ -19,3 +19,4 @@ console.log(10 == "10");//true
 console.log(5 == 25);//false
 console.log(10 == 10n);//true
 console.log("10" == "10");//true
+//3.
