@@ -36,3 +36,4 @@ if(grade >= 0 && grade < 40 ){
     if(grade >= 70 && grade < 100){
         alert(`Eiiish Einstein You scored an A !!! in ${unit}`);
     }
+    //if is pretty boring without his relative else :(
