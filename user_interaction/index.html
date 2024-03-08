@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+</head>
+<body>
+    <input id="myId" type="text" ></input>
+    <input id="email" type="email" ></input>
+    <input id="password" type="password" ></input>
+    <button onclick="console.log(document.getElementById('myId').value)">Get Text</button>
+    <button onclick="console.log(document.getElementById('email').value)">Get Email</button>
+    <button onclick="console.log(document.getElementById('password').value)">Get Password</button>
+    <script>
+        let test = prompt("Hello", "World");
+        let width = prompt("Enter the Width of the box : ");
+        let height = prompt("Enter the Height of the box : ");
+        let length = prompt("Enter the Length of the box : ");
+        let volume = width * height * length;
+        alert(`The volume of the box is ${volume}`)
+        let contacts = [{
+name: "Maxwell Wright",
+phone: "(0191) 719 6495",
+email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+}, {
+name: "Raja Villarreal",
+phone: "0866 398 2895",
+email: "posuere.vulputate@sed.com"
+}, {
+name: "Helen Richards",
+phone: "0800 1111",
+email: "libero@convallis.edu"
+}];
+
+// write your code here
+let lastName= prompt("Enter The name of the last contact");
+let lastPhone = prompt("Enter The Phone number of the last contact");
+let lastEmail = prompt("Enter The email of the last contact");
+
+let lastContact = {
+    name : lastName,
+    phone : lastPhone,
+    email : lastEmail,
+}
+contacts.push(lastContact);
+
+let last = contacts.length - 1;
+
+console.log(`${contacts[0].name} / ${contacts[0].phone} / ${contacts[0].email}`);
+console.log(`${contacts[contacts.length - 1].name} / ${contacts[contacts.length - 1].phone} / ${contacts[contacts.length - 1].email}`);
+    </script>
+</body>
+</html>
