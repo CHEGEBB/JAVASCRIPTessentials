@@ -19,3 +19,12 @@ var a = 5;
 while (a > 1) {
   console.log(a--);
 }
+
+var car = {
+  make: "Citroen",
+  model: "DS"
+};
+
+for (var f in car) {
+  console.log(f);
+}

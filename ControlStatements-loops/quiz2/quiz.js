@@ -14,3 +14,7 @@ console.log(x);
 
 let a = 5; while (a > 1)
      console.log(a--);
+
+let car = {make: "Citroen", model: "DS"};
+     for (let f in car)
+     console.log(f);
