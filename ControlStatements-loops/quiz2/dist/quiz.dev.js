@@ -14,3 +14,8 @@ for (var j = first; j >= last; j -= 10) {
 var x = 100;
 if (x < 100) x = 20;
 console.log(x);
+var a = 5;
+
+while (a > 1) {
+  console.log(a--);
+}
