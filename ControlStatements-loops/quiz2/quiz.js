@@ -1,8 +1,8 @@
 for (let i=100; i>=0; i-=10) {
     console.log(i);
 }
-let first =prompt("What is the first number?");
-let last = prompt("What is the last number?");
+let first = prompt("What is the first number?");
+let last =  prompt("What is the last number?");
 for (let j = first; j>=last;j-=10){
     console.log(j);
 }
@@ -10,4 +10,5 @@ for (let j = first; j>=last;j-=10){
 let x = 100;
 if (x < 100)
     x = 20;
-console.log(x)
+console.log(x);
+
