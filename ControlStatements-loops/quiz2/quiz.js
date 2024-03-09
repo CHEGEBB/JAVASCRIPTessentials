@@ -18,3 +18,7 @@ let a = 5; while (a > 1)
 let car = {make: "Citroen", model: "DS"};
      for (let f in car)
      console.log(f);
+
+let steps = [3, 2, 1];
+     for (let n of steps)
+     console.log(n);

@@ -28,3 +28,10 @@ var car = {
 for (var f in car) {
   console.log(f);
 }
+
+var steps = [3, 2, 1];
+
+for (var _i = 0, _steps = steps; _i < _steps.length; _i++) {
+  var n = _steps[_i];
+  console.log(n);
+}
