@@ -21,5 +21,5 @@ function sumOfTemps() {
     sum += temperatures[i];
   }
 
-  meanTemp = sum / tempeatures.length;
+  meanTemp = sum / temperatures.length;
 }

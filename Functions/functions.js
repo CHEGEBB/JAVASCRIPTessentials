@@ -16,5 +16,5 @@ function sumOfTemps() {
     for (let i = 0; i < temperatures.length; i++) {
         sum += temperatures[i];
     }
-    meanTemp = sum / tempeatures.length;
+    meanTemp = sum / temperatures.length;
 }
