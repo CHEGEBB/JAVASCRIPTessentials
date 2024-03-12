@@ -8,7 +8,7 @@
 // Function names need to follow the same rules as variable names, and should also be meaningful.
 // After the function name, there are parentheses that can optionally have function parameters.
 // After the parentheses comes the function body, which is made from any number of statements (a code block).
-let tempeatures = [32, 45, 50, 60, 70, 80, 90, 100];
+let temperatures = [32, 45, 50, 60, 70, 80, 90, 100];
 let sum;
 let meanTemp;
 function sumOfTemps() {
