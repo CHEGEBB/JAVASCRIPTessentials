@@ -31,3 +31,17 @@ let outer = function(callback) {
 console.log('test 1');
 outer(inner);
 console.log('test 2');
+//asynchronous callbacks are executed at a later time
+//this is to say that the callback function is not executed immediately
+//example
+function greeting(name) {
+    console.log('Hello ' + name);
+}
+function processUserInput(callback) {
+    let name = 'John';
+    setTimeout(function() {
+        callback(name);
+    }, 3000);
+}
+
+//example2

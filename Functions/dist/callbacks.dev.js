@@ -37,4 +37,6 @@ var outer = function outer(callback) {
 
 console.log('test 1');
 outer(inner);
-console.log('test 2');
+console.log('test 2'); //asynchronous callbacks are executed at a later time
+//this is to say that the callback function is not executed immediately
+//example
