@@ -8,3 +8,10 @@ function test(y) {
      console.log(y);
 }
 test(20);
+
+let w= 10;
+let z = 20;
+function test(z) {
+     console.log(z);
+}
+test(w);
