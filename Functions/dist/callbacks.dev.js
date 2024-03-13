@@ -23,3 +23,18 @@ processUserInput(greeting); //Hello John
 //the processUserInput function then calls the callback function and passes a name to it
 //the greeting function is the callback function
 //the greeting function is passed to the processUserInput function
+//example2
+
+var inner = function inner() {
+  console.log('inner 1');
+};
+
+var outer = function outer(callback) {
+  console.log('outer 1');
+  callback();
+  console.log('outer 2');
+};
+
+console.log('test 1');
+outer(inner);
+console.log('test 2');
