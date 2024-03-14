@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     parent.addEventListener('click', e =>{
 
         console.log("Parent1");
-        
     });
     child.addEventListener('click',printHi);
 
