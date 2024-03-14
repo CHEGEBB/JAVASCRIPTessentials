@@ -15,3 +15,12 @@ let c = 20 + -"10" + "10";
 let d = "10" - "10" + "100";
 let e = "A" - "B" + 0xA;
 console.log(`${a}, ${b}, ${c}, ${d}, ${e}`);//2010, 30, 1010, 0100, 5
+
+const y = "hello";
+    console.log(a.toUpperCase());
+}
+} catch (error) {
+    console.log(y)
+} finally {
+    console.log(y);
+}
