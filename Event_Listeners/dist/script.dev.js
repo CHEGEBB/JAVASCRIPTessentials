@@ -33,4 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }, {
     capture: true
   });
+  document.addEventListener('click', function (e) {
+    console.log("Document2 capture");
+  }, {
+    capture: true
+  });
 });

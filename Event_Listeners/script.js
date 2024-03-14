@@ -28,4 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     child.addEventListener('click', e =>{
         console.log("child2 capture");
     },{ capture :true});
+    document.addEventListener('click', e =>{
+        console.log("Document2 capture");
+
+    },{ capture : true});
 })  
