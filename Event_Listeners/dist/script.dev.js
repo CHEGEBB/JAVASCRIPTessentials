@@ -3,7 +3,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   var grandparent = document.querySelector('.grandparent');
   var parent = document.querySelector('.parent');
-  var child = document.querySelector('.child');
+  var child = document.querySelector('.child'); //event  bubbling
+
   grandparent.addEventListener('click', function (e) {
     console.log("Grandparent 1");
   });
