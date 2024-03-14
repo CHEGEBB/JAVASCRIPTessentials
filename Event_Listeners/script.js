@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Grandparent 2 capture");
     }, { capture : true});
     parent.addEventListener('click', e =>{
+        e.stopPropagation();//this method  stops the evnt listener at tha point it has been called
         console.log("parent2 capture");
     },{ capture : true});
     child.addEventListener('click', e =>{
