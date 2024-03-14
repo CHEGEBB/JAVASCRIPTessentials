@@ -11,9 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
   parent.addEventListener('click', function (e) {
     console.log("Parent1");
   });
-  child.addEventListener('click', function (e) {
-    console.log("child1");
-  });
+  child.addEventListener('click', printHi);
+  setTimeout(function () {
+    child.removeEventListener('click', printHi);
+  }, 2000); //The remove event listener removes or acts the opposite of add event listener we also added setTimeout function so hi will disppaera after 2 seconds
+
   document.addEventListener('click', function (e) {
     console.log("document1");
   }); //event capture start from the outside  coming in so from document,grandparent,parent,child
@@ -24,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
     capture: true
   });
   parent.addEventListener('click', function (e) {
-    e.stopPropagation(); //this method  stops the evnt listener at tha point it has been called
-
     console.log("parent2 capture");
   }, {
     capture: true
+  }, {
+    once: true
   });
   child.addEventListener('click', function (e) {
     console.log("child2 capture");
@@ -40,4 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }, {
     capture: true
   });
+
+  function printHi() {
+    console.log("Hi");
+  }
 });
