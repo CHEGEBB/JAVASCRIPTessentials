@@ -18,4 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', e =>{
         console.log("document1");
     });
+    //event capture start from the outside  coming in so from document,grandparent,parent,child
+    grandparent.addEventListener('click', e =>{
+        console.log("Grandparent 2 capture");
+    }, { capture : true});
+    parent.addEventListener('click', e =>{
+        console.log("parent2 capture");
+    },{ capture : true});
+    child.addEventListener('click', e =>{
+        console.log("child2 capture");
+    },{ capture :true});
 })  
