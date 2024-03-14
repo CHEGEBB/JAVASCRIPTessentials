@@ -13,3 +13,9 @@ var x = false || true;
 var y = "true" && "false";
 var z = false && true;
 console.log("".concat(x, " ").concat(y, " ").concat(z));
+var a = 20 + "10";
+var b = 20 + +"10";
+var c = 20 + -"10" + "10";
+var d = "10" - "10" + "100";
+var e = "A" - "B" + 0xA;
+console.log("".concat(a, ", ").concat(b, ", ").concat(c, ", ").concat(d, ", ").concat(e)); //2010, 30, 1010, 0100, 5
