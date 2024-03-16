@@ -5,4 +5,5 @@ document.addEventListener('DOMContentLoaded', function () {
   banner;
   var books = document.getElementById("books-list");
   var title = document.getElementsByClassName('title');
+  title[0];
 });
