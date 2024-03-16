@@ -18,4 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     //Query selector
     const wrap =document.querySelector('#wrapper');
     console.log(wrap);
+    const wmf =document.querySelector('#book-list li:nth-child(2).name');
+    console.log(wmf);
 });
