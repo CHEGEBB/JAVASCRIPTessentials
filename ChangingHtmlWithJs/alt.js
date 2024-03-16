@@ -9,5 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let i = 0; i< title.length; i++){
         console.log(title[i]);
     }
+    Array.from(title).forEach(function(item){
+        console.log(item);
+
+    })
 
 });
