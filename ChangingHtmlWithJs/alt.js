@@ -6,5 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var title = document.getElementsByClassName('title');
     title[0];
     var lis = document.getElementsByTagName('li');
+    for (let i = 0; i< title.length; i++){
+        console.log(title[i]);
+    }
 
 });
