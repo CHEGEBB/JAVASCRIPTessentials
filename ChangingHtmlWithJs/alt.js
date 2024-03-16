@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    //Getting elements by Id,classname and tagname
   
     var banner = document.getElementById('page-banner');
     banner;
@@ -14,4 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     })
 
+    //Query selector
+    const wrap =document.querySelector('#wrapper');
+    console.log(wrap);
 });

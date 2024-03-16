@@ -1,6 +1,7 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
+  //Getting elements by Id,classname and tagname
   var banner = document.getElementById('page-banner');
   banner;
   var books = document.getElementById("books-list");
@@ -14,5 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   Array.from(title).forEach(function (item) {
     console.log(item);
-  });
+  }); //Query selector
+
+  var wrap = document.querySelector('#wrapper');
+  console.log(wrap);
 });
