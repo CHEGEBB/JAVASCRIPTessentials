@@ -24,5 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var books = document.querySelector('#book-list li.name');
   console.log(books);
   var books = document.querySelectorAll('#book-list li.name');
-  console.log(books);
+  console.log(books); //when the querySelectorAll is used, it returns a NodeList, which is not an array, so we can't use array methods on it.
+  //so we use .forEach method to loop through the NodeList
+  //however the other method returns an HTMLCollection, which is an array like object, so we can use array methods on it.
+  //we can also convert the NodeList to an array using Array.from method
+
+  books.forEach(function (book) {
+    console.log(book.textContent); //textContent is used to get the text content of an element
+  });
 });
