@@ -23,4 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log(wmf);
   var books = document.querySelector('#book-list li.name');
   console.log(books);
+  var books = document.querySelectorAll('#book-list li.name');
+  console.log(books);
 });
