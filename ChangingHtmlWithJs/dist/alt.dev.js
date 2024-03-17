@@ -21,4 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log(wrap);
   var wmf = document.querySelector('#book-list li:nth-child(2).name');
   console.log(wmf);
+  var books = document.querySelector('#book-list li.name');
+  console.log(books);
 });

@@ -20,4 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(wrap);
     const wmf =document.querySelector('#book-list li:nth-child(2).name');
     console.log(wmf);
+
+    var books = document.querySelector('#book-list li.name');
+    console.log(books);
 });
