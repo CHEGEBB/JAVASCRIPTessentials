@@ -30,6 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
   //we can also convert the NodeList to an array using Array.from method
 
   books.forEach(function (book) {
-    console.log(book.textContent); //textContent is used to get the text content of an element
+    console.log(book.textContent);
   });
 });

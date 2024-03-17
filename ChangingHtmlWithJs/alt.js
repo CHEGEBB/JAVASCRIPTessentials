@@ -31,6 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
     //however the other method returns an HTMLCollection, which is an array like object, so we can use array methods on it.
     //we can also convert the NodeList to an array using Array.from method
     books.forEach(function(book){
-        console.log(book.textContent);//textContent is used to get the text content of an element
+        console.log(book.textContent);
     })
 });
