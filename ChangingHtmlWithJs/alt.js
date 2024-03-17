@@ -5,5 +5,5 @@ Array.from(books).forEach(function(book){
 
 });
 const bookList = document.querySelector('#book-list');
-bookList.innerHTML = '<h2>Books and more books...</h2>';
+// bookList.innerHTML = '<h2>Books and more books...</h2>';
 bookList.innerHTML+= '<p>See This is how we add html..</p>';
