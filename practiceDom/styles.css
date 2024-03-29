@@ -132,6 +132,12 @@ footer {
     display: none;
 }
 
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .images img {
     width: 400px;
     height: 300px;
