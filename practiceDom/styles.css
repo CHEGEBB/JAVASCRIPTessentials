@@ -127,3 +127,13 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+.hide {
+    display: none;
+}
+
+.images img {
+    width: 400px;
+    height: 300px;
+    border-radius: 12px;
+}
