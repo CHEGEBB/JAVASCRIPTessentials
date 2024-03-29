@@ -137,3 +137,11 @@ footer {
     height: 300px;
     border-radius: 12px;
 }
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    background-color: crimson;
+    color: #333;
+}
