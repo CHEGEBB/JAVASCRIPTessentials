@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event listeners in javascript</title>
     <script src="./script.js"></script>
     <style>
-        body{
+        body {
             background-color: #333;
-
         }
-        .grandparent{
+        
+        .grandparent {
             width: 400px;
             height: 400px;
             background-color: crimson;
@@ -19,7 +20,8 @@
             margin-left: 450px;
             margin-top: 50px;
         }
-        .parent{
+        
+        .parent {
             width: 300px;
             height: 300px;
             background-color: orangered;
@@ -28,7 +30,8 @@
             justify-content: center;
             align-items: center;
         }
-        .child{
+        
+        .child {
             width: 200px;
             height: 200px;
             background-color: green;
@@ -39,12 +42,17 @@
         }
     </style>
 </head>
+
 <body>
+
     <div class="grandparent">
         <div class="parent">
             <div class="child"></div>
         </div>
+        <div class="container" id="container"></div>
     </div>
-    
+    <button onclick="document.getElementById('container').innerHTML= Date();" style="width: 300px;height:100px;margin-left:200px;background-color:aqua;">Click me to see the time</button>
+
 </body>
+
 </html>
