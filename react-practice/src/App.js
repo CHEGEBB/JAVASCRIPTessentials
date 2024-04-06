@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
 
 function App() {
-  const [showColor, setShowColor] = useState(false); // State to manage visibility
+  // Define state variable for the counter
+  const [count, setCount] = useState(0);
 
-  const myBeginning = <h1>Hello world its me React</h1>;
-  const inputMe = <input type="email" placeholder="johnDoe@hotmail.com" />;
-  const colorInput = (
-    <p style={{ color: "blue" }}>
-      Hey You clicked the button here's Your surprise paragraph!!
-    </p>
-  );
+  // Function to increment the counter
+  const incrementCounter = () => {
+    // Update the count state by incrementing its current value
+    setCount(count + 1);
+  };
 
   return (
     <div className="App">
-      {myBeginning}
-      {inputMe}
-      <button onClick={() => setShowColor(!showColor)}>Click Me!</button>
-      {showColor && colorInput} {/* Render colorInput only if showColor is true */}
+      <h1>Button Click Counter</h1>
+      <p>Count: {count}</p>
+      {/* Button to increment the counter */}
+      <button onClick={incrementCounter}>Increment</button>
     </div>
   );
 }
