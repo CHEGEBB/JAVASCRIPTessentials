@@ -26,3 +26,30 @@ function Football() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Football />);
 
+// Passing Arguments
+// To pass an argument to an event handler, use an arrow function.
+
+// e.g
+//<button onClick={() => shoot('Goal')}>Take the shot!</button>
+
+// The shoot function will receive the 'Goal' string when the button is clicked.
+
+// e.g
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Football() {
+    const shoot = (a) => {
+        alert(a);
+    }
+    
+    return (
+        <button onClick={() => shoot('Goal')}>Take the shot!</button>
+    );
+    }
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);
+//Here a is the argument passed to the shoot function when the button is clicked.We can pass any argument to the function. even x,y,z etc.
+
+
