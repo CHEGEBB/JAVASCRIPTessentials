@@ -82,3 +82,25 @@ function MyForm() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<MyForm />);
+//In React the value of a textarea is placed in a value attribute. We'll use the useState Hook to manage the value of the textarea
+import { useState } from "react";
+import ReactDOM from "react-dom/client";
+
+function MyForm() {
+  const [textarea, setTextarea] = useState(
+    "The content of a textarea goes in the value attribute"
+  );
+
+  const handleChange = (event) => {
+    setTextarea(event.target.value)
+  }
+
+  return (
+    <form>
+      <textarea value={textarea} onChange={handleChange} />
+    </form>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<MyForm />);
