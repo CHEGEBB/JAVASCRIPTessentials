@@ -104,3 +104,28 @@ function MyForm() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<MyForm />);
+
+//select is also different in React. In React, the value of a select is placed in a value attribute. We'll use the useState Hook to manage the value of the select.
+import { useState } from "react";
+import ReactDOM from "react-dom/client";
+
+function MyForm() {
+  const [myCar, setMyCar] = useState("Volvo");
+
+  const handleChange = (event) => {
+    setMyCar(event.target.value)
+  }
+
+  return (
+    <form>
+      <select value={myCar} onChange={handleChange}>
+        <option value="Ford">Ford</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Fiat">Fiat</option>
+      </select>
+    </form>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<MyForm />);
