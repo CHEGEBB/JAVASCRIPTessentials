@@ -49,3 +49,30 @@ root.render(<Garage cars={cars} />);
 // If cars.length > 0 is equates to true, the expression after && will render.
 //If we empty the cars array, the expression after && will not render.
 
+//3. Conditional Rendering using ternary operator
+//The ternary operator is used to render the component based on the condition.
+//If the condition is true then the component is rendered otherwise the other component is rendered.
+//syntax : condition ? true : false
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function MissedGoal() {
+	return <h1>MISSED!</h1>;
+}
+
+function MadeGoal() {
+	return <h1>GOAL!</h1>;
+}
+
+function Goal(props) {
+  const isGoal = props.isGoal;
+	return (
+		<>
+			{ isGoal ? <MadeGoal/> : <MissedGoal/> }
+		</>
+	);
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Goal isGoal={false} />);
+
