@@ -51,3 +51,27 @@ function Car() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car />);
+//when we use the useSstate hook it overwrites the state with the new state. To avoid this we can use the spread operator to merge the new state with the old state.
+//only relevant snippet is shown here
+function Car() {
+  const [car, setCar] = useState({
+    brand: "Ford",
+    model: "Mustang",
+    year: "1964",
+    color: "red"
+  });
+  
+  const updateColor = () => {
+    setCar({...car, color: "blue"});//this means that the brand, model, and year will remain the same and only the color will be updated to blue
+  }
+  
+  return (
+    <>
+      <h1>My {car.brand}</h1>
+      <p>
+        It is a {car.color} {car.model} from {car.year}.
+      </p>
+      <button onClick={updateColor}>Change color</button>
+    </>
+  )
+}
