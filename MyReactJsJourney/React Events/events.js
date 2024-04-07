@@ -53,3 +53,27 @@ root.render(<Football />);
 //Here a is the argument passed to the shoot function when the button is clicked.We can pass any argument to the function. even x,y,z etc.
 
 
+// React event object
+
+// React passes an event object to the event handler function.
+// The event object contains a bunch of useful information about the event, such as:
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Football() {
+  const shoot = (a, e) => {
+    alert(e.type);
+		/*
+		'e' represents the React event that triggered the function.
+    In this case, the 'click' event
+		*/
+  }
+
+  return (
+    <button onClick={(event) => shoot("Goal!", event)}>Take the shot!</button>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);
