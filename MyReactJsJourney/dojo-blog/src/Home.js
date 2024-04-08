@@ -8,8 +8,13 @@ const Home = () => {
         setBlogs(newBlogs);
     }
     useEffect(() => {
-        console.log('use effect ran');
-        console.log(blogs);
+        fetch('http://localhost:8000/blogs')
+        .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            setBlogs(data);
+        })
     });
     
     return ( 
