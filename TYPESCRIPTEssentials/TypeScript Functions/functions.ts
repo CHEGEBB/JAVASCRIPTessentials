@@ -52,4 +52,5 @@ function sum(a: number, b: number, c?: number) {
     return a + b + (c || 0);
   }
   
-  console.log(sum(2,5))
+  console.log(sum(2,5))//7
+    console.log(sum(2,5,3))//10
