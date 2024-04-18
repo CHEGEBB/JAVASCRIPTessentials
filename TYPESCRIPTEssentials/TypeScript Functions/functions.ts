@@ -45,3 +45,11 @@ function multiply(x: number ,y : number): number {
   }
   console.log(multiply(2, 3)); // 6
 //   If no parameter type is defined, TypeScript will default to using any, unless additional type information is available as shown in the Default Parameters and Type Alias sections below.
+//  Optional Parameters
+// Optional parameters are parameters that can be omitted when calling a function.
+// the `?` operator here marks parameter `c` as optional
+function sum(a: number, b: number, c?: number) {
+    return a + b + (c || 0);
+  }
+  
+  console.log(sum(2,5))
