@@ -9,3 +9,14 @@ function printStatusCode(code: string | number) {
 
 printStatusCode(404);
 printStatusCode('404');
+//Union Type Errors
+//If we try to pass a boolean value to the function, we will get an error.
+//example
+// printStatusCode(true);
+//another example
+function printStatusMessage(status: string | number) {
+  console.log(`My status is ${status}.`)
+}
+console.log(typeof status); //string
+printStatusMessage('404');
+printStatusMessage(404);
