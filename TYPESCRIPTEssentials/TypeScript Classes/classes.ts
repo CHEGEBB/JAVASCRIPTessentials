@@ -47,3 +47,39 @@ class Person {
   const person = new Person("Jane");
   
   console.log(person.getName());
+//Inheritance
+// TypeScript supports class inheritance
+
+// A class can inherit from another class by using the extends keyword.
+// The derived class can access the properties and methods of the base class.
+// The derived class can override the properties and methods of the base class.
+// The derived class can call the constructor of the base class using the super keyword.
+class Person {
+    protected name: string;
+  
+    public constructor(name: string) {
+      this.name = name;
+    }
+  
+    public getName(): string {
+      return this.name;
+    }
+  }
+  
+  class Employee extends Person {
+    private department: string;
+  
+    public constructor(name: string, department: string) {
+      super(name);
+      this.department = department;
+    }
+  
+    public getElevatorPitch(): string {
+      return `Hello, my name is ${this.name} and I work in ${this.department}`;
+    }
+  }
+        
+  const employee = new Employee("Jane", "Sales");
+  
+  console.log(employee.getElevatorPitch());
+  console.log(employee.getName());
