@@ -61,5 +61,18 @@ function sum(a: number, b: number, c?: number) {
   function multiplication (a: number, b: number, c?: number): number {
     return a * b * (c || 1);
   }
+  console.log(multiplication(2, 3)); // 6
+  console.log(multiplication(2, 3, 4)); // 24
+  //Default Parameters
+// Default parameters are parameters that have default values.
+// If a default value is provided for a parameter, the parameter becomes optional.
+//example
+function add(a: number, b: number = 0): number {
+    return a + b;
+  }
+  
+  console.log(add(2)); // 2
+  console.log(add(2, 3)); // 5
+  //Rest Parameters
 
     
