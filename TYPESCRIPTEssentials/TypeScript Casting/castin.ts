@@ -13,3 +13,7 @@ console.log(num2);
 //Using <> works the same as casting with as.
 let x: unknown = 'hello';
 console.log((<string>x).length);
+// Force casting
+//To override type errors that TypeScript may throw when casting, first cast to unknown, then to the target type.
+let y: unknown = 'hello';
+console.log((y as string).length);
