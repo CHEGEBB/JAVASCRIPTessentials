@@ -71,4 +71,18 @@ function pow(value: number, exponent: number = 10) {
   return value ** exponent;
 }
 console.log(pow(10));
+//named parameters
+function greetUser(firstName: string, lastName: string) {
+    return `Hello, ${firstName} ${lastName}!`;
+  }
+  
+  console.log(greetUser('John', 'Doe')); // Hello, John Doe!
+  //Named parameters
+// Named parameters are parameters that are passed to a function by name.
+// In TypeScript, we can use named parameters to make functions more readable and easier to use.
+//example
+function divide({ dividend, divisor }: { dividend: number, divisor: number }) {
+  return dividend / divisor;
+}
+
     
