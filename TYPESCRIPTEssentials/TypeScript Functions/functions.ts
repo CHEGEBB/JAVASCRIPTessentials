@@ -84,5 +84,16 @@ function greetUser(firstName: string, lastName: string) {
 function divide({ dividend, divisor }: { dividend: number, divisor: number }) {
   return dividend / divisor;
 }
+console.log(divide({ dividend: 10, divisor: 2 })); // 5
+//Rest Parameters
+// Rest parameters are parameters that allow a function to accept an arbitrary number of arguments.
+// In TypeScript, we can use rest parameters to define functions that accept a variable number of arguments.
+//Rest parameters can be typed like normal parameters, but the type must be an array as rest parameters are always arrays.
+//example
+function add(a: number, b: number, ...rest: number[]) {
+  return a + b + rest.reduce((p, c) => p + c, 0);
+}
+
+console.log(add(10,10,10,10,10));
 
     
