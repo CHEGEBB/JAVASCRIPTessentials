@@ -52,5 +52,14 @@ function sum(a: number, b: number, c?: number) {
     return a + b + (c || 0);
   }
   
-  console.log(sum(2,5))//7
-    console.log(sum(2,5,3))//10
+  console.log(sum(2,5))//7console.log(sum(2,5,3))//10
+  //void is a type that represents the absence of a value. It is used to indicate that a function does not return a value.
+  function printHi(): void {
+    console.log('Hello!');
+  }
+  //optional parameters
+  function multiplication (a: number, b: number, c?: number): number {
+    return a * b * (c || 1);
+  }
+
+    
