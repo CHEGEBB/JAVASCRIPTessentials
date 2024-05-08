@@ -28,5 +28,10 @@ fs.mkdir('./assets', (err) =>{
 })
 }
 else{
-    console.log('folder already exists');
+    fs.rmdir('./assets',(err) => {
+        if(err){
+            console.log(err);
+        }
+        console.log('folder deleted');
+    });
 };
