@@ -6,6 +6,7 @@ const server = http.createServer((req,res) => {
     // response header
     res.setHeader('Content-Type', 'text/plain');
     res.write('Hello, world!');
+    res.end();
 });
 
 server.listen(3000, 'localhost', () => {
