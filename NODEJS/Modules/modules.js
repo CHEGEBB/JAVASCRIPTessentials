@@ -6,7 +6,7 @@ console.log(people);
 console.log(countries);
 console.log(people, countries);
 
-// other objects
+// other modules
  
 const os = require('os');
 
