@@ -2,4 +2,7 @@
 // In browser we have window object
 // In node js we have global object
 
-console.log(global);
+// console.log(global);
+global.setTimeout(() => {
+    console.log('In the timeout');
+},3000);
