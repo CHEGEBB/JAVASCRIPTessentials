@@ -7,8 +7,6 @@ const server = http.createServer((req,res) => {
     // response header
     // res.setHeader('Content-Type', 'text/plain');
     res.setHeader('Content-Type', 'text/html');
-    res.write('<p> Hello, world!</p>');
-    res.end();
 
     //send an html file
     fs.readFile('./views/index.html', (err, data) =>{
@@ -17,7 +15,7 @@ const server = http.createServer((req,res) => {
             res.end();
         } else {
             res.write(data);
-            res.end(data);
+            res.end();
         }
     })
 });
