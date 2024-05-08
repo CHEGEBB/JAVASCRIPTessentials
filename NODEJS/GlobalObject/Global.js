@@ -11,3 +11,8 @@ setTimeout(() => {
 const int = setInterval(() =>{
     console.log('In the interval');
 },1000);
+
+//we also have the __dirname and __filename
+console.log(__dirname);
+console.log(__filename);
+// These are not global objects but they are available in every file they serve this purposes to get the directory name and file name
