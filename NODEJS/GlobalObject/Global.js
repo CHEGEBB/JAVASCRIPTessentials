@@ -3,6 +3,6 @@
 // In node js we have global object
 
 // console.log(global);
-global.setTimeout(() => {
+setTimeout(() => {
     console.log('In the timeout');
 },3000);
