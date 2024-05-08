@@ -5,5 +5,5 @@ fs.readFile('./docs/doc.txt', (err, data) =>{
     if(err){
         console.log(err);
     }
-    console.log(data);
+    console.log(data.toString());
 });
