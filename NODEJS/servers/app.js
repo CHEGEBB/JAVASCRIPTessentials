@@ -16,5 +16,5 @@ app.get('/about', (req, res) =>{
 })
 
 app.get('/contact', (req, res) =>{
-    res.send('<p>contact Page</p>');
+    res.sendFile('./views/contact.html', {root : __dirname});
 })

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Response with Styles</title>
+    <title>Contact Us</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #f9f9f9;
+            color: #333;
         }
         .container {
             max-width: 800px;
@@ -20,22 +21,37 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #333;
+            color: #007bff;
         }
         p {
-            color: #666;
             line-height: 1.6;
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
             background-color: #007bff;
             color: #fff;
-            text-decoration: none;
+            border: none;
             border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        .btn:hover {
+        input[type="submit"]:hover {
             background-color: #0056b3;
         }
         .nav {
@@ -52,7 +68,6 @@
             text-decoration: none;
             margin: 0 10px;
         }
-
     </style>
 </head>
 <body>
@@ -62,10 +77,17 @@
         <a href="/contact">Contact</a>
     </div>
     <div class="container">
-        <h1>Welcome to My Node.js HTML Response!</h1>
-        <p>This is a sample HTML file with inline styles.</p>
-        <p>You can use this as a template for generating HTML responses in your Node.js applications.</p>
-        <a href="#" class="btn">Learn More</a>
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out to us using the form below.</p>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </body>
 </html>
