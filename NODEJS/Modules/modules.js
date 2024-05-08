@@ -1,9 +1,13 @@
 
-const need = require('./people');
-// we can use destructuring to get the values
-const {people} = require('./people');
-const {countries} = require('./people');
+const {people, countries} = require('./people');
 
 
 console.log(people);
 console.log(countries);
+console.log(people, countries);
+
+// other objects
+ 
+const os = require('os');
+
+console.log(os);
