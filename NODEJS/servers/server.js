@@ -2,6 +2,10 @@ const http = require ('http');
 
 const server = http.createServer((req,res) => {
     console.log(req.url, req.method);
+
+    // response header
+    res.setHeader('Content-Type', 'text/plain');
+    res.write('Hello, world!');
 });
 
 server.listen(3000, 'localhost', () => {
