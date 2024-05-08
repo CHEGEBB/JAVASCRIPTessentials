@@ -11,4 +11,8 @@ const fs = require('fs');
 // writing files
 fs.writeFile('./docs/doc.txt', 'Hello, Again', () => {
     console.log('file was written');
-});    
+});   
+
+fs.writeFile('./docs/doc2.txt', 'Hello, You', () => {
+    console.log('file was written');
+});   
