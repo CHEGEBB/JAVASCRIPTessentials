@@ -1,0 +1,2 @@
+
+const need = require('./people');
