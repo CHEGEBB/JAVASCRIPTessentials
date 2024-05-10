@@ -3,7 +3,7 @@
 Welcome to my self-paced JavaScript learning adventure! This repository is a testament to my commitment to mastering JavaScript from the very basics to advanced concepts. JavaScript, often dubbed as the "language of the web," plays a crucial role in modern web development. Its versatility, ease of use, and widespread adoption make it an essential skill for any developer.
 
 ## 📚 Learning Resources
-### Special shout out to the youtube tutorials i use 
+### Special shout out to the youtube tutorials i use (javascript,react,node js)
 https://www.youtube.com/@NetNinja
 
 ### 🌟 Cisco
