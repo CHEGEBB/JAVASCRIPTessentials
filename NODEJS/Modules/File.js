@@ -8,6 +8,7 @@ const fs = require('fs');
 //     console.log(data.toString());
 // });
 
+
 // writing files
 // fs.writeFile('./docs/doc.txt', 'Hello, Again', () => {
 //     console.log('file was written');
@@ -16,6 +17,10 @@ const fs = require('fs');
 // fs.writeFile('./docs/doc2.txt', 'Hello, You', () => {
 //     console.log('file was written');
 // });   
+
+// writing or creating files we can also use the following methods:
+// fs.appendFile()-this will append the data to the file
+//fs.open()-this will create a file
 
 // directories
 // create a directory
