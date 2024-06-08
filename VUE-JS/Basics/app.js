@@ -1,1 +1,2 @@
-console.log('Hello World')
+const app =Vue.CreateApp ()
+app.mount('#app')
