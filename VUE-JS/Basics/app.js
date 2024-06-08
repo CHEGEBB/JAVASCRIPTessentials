@@ -8,7 +8,7 @@ const app =Vue.createApp ({
     },
     methods:{
         changeTitle(){
-            console.log('You Clicked me')
+            this.title = 'Words of Radiance'
         }
     }
 })
