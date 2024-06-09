@@ -11,7 +11,7 @@ const app =Vue.createApp ({
             this.title = 'Words of Radiance'
         }
         changeAuthor:{
-            this.author="me"
+            this.author=" Doe"
         }
     }
 })
