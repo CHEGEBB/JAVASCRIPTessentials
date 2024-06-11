@@ -12,12 +12,13 @@ const app =Vue.createApp ({
         },
         changeAuthor(){
             this.author=" Doe"
-        }
+        },
+        handleEvent(e){
+            console.log(e, e.type)
+            }
       
-    },
-    handleEvent(){
-    console.log('event')
     }
+ 
 })
 
 app.mount('#app')
