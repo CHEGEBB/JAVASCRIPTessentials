@@ -12,10 +12,11 @@ const app =Vue.createApp ({
         },
         changeAuthor(){
             this.author=" Doe"
-        },
-        handleEvent(){
-            console.log("Event fired")
         }
+      
+    },
+    handleEvent(){
+    console.log('event')
     }
 })
 
