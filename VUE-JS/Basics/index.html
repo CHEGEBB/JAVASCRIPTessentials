@@ -26,7 +26,7 @@
         <button @click ="changeAuthor">Change Author</button>
 
         <br>
-        <div class="box" @mouseover="handleEvent">mouseover(enter)</div>
+        <div class="box" @mouseover="handleEvent($event, 5)">mouseover(enter)</div>
         <div class="box" @mouseleave="handleEvent">mouseleave</div>
         <div class="box" @dbclick="handleEvent">doubleclick</div>
         <div class="box"></div>

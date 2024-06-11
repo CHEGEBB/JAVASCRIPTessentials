@@ -13,8 +13,11 @@ const app =Vue.createApp ({
         changeAuthor(){
             this.author=" Doe"
         },
-        handleEvent(e){
+        handleEvent(e, data){
             console.log(e, e.type)
+            if(data){
+                console.log(data)
+            }
             }
       
     }
