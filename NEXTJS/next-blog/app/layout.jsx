@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -13,12 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <nav>
-        <h2>Dashboard</h2>
-        <Link>
-          
-        </Link>
-      </nav>
+      <h2>Dashboard</h2>
       {children}
       </body>
     </html>
