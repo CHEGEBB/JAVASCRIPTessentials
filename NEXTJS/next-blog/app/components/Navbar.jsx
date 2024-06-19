@@ -10,6 +10,9 @@ export default function Navbar() {
     <Image
     src={Logo}
     alt='logo'
+    width={70}
+    quality={100}
+    placeholder='blur'
      />
     <Link href="/">Dashboard</Link>
     <Link href="/tickets">tickets</Link>
