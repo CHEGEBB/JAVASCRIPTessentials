@@ -22,7 +22,7 @@ export default async function TicketList() {
         
     )))}
     {tickets.length === 0 && (
-        <p className='text-center'>There are no </p>
+        <p className='text-center'>There are no open Tickets</p>
     )}
 
     </>
