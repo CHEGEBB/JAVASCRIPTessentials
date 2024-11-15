@@ -2,8 +2,10 @@
 const app = Vue.createApp({
     data () {
         return {
-            title: 'My Vue App',
-            message: 'Hello Vue!'
+            title: 'The Final Empire',
+            author: 'Brandon Sanderson',
+            age: 45
+            
         }
     }
 })
