@@ -16,8 +16,12 @@
             <button @click="toggleShowBooks">
                 <span v-if="showBooks">Hide Books</span>
                 <span v-if="!showBooks">Show Books</span>
+                <!-- also we can use -->
+                 <!-- <span v-else>Show Books</span> -->
 
-            </button>
+            </button><br>
+            <span v-show="showBooks">Currently Showing books</span>
+
             <!-- <button v-on:click="age++">
                 Increase age
             </button>
