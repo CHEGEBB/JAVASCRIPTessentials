@@ -2,6 +2,9 @@
     let user ="Brian Chege"
 </script>
 <h2 >
+    <div class="nav">
+        <a href="/about">About my site</a>
+    </div>
     Hello, my name is {user}!
     <br>
     I'm a software engineer specializing in full-stack development.
@@ -10,9 +13,16 @@
     </p>
 </h2>
 <style>
+    .nav{
+        background-color: #333;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
    
     h2 {
-        color: white;
+        color: #ccc;
         font-size: 24px;
         text-align: center;
         position: relative;
