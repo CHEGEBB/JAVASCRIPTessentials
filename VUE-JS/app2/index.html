@@ -22,8 +22,9 @@
     <h1>Hello, Vue ;)</h1>
         <div id="app" class="app">
             <div v-if="showBooks">
-                <h2>{{title}}-{{author}}-{{age}}</h2>
-               
+                <ul>
+                    <li v-for="book in books" :key="book.id">{{book.title}} - {{book.author}}-{{book.pages}}</li>
+                </ul>
             </div>
             <button @click="toggleShowBooks">
                 <span v-if="showBooks">Hide Books</span>
