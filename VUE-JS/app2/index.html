@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Vue</title>
     <script src="https://unpkg.com/vue@3.0.2"></script>
-    <style>
+    <style >
         .box{
             width: 300px;
             height: 300px;
@@ -16,14 +16,47 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
             display: inline-block;
         }
+        ul{
+            justify-content: space-between;
+            gap: 20px;
+        }
+        li{
+            height: 190px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        li img{
+            width: 180px;
+            height: 180px;
+        }
+        .fav{
+            background-color: blueviolet;
+
+           
+        }
+        .fav  img{
+                width: 200px;
+                height: 200px;
+            }
+        
     </style>
 </head>
 <body>
     <h1>Hello, Vue ;)</h1>
         <div id="app" class="app">
+            <a v-bind:href="url">Best Website In the Freakin World</a><br>
+            <a :href="url">Best Website2 In the Freakin World</a>
+
             <div v-if="showBooks">
                 <ul>
-                    <li v-for="book in books" :key="book.id">{{book.title}} - {{book.author}}-{{book.pages}}</li>
+                    <li v-for="book in books" :class="{fav : book.isFav} " @click="toggleIsFav(book)" >
+                        
+                        <img :src="book.img" :alt="book.title"/>
+                        <h3>{{book.title}}</h3>
+                        <p>{{book.author}}</p>
+                        <p>{{book.pages}}</p>
+                    </li>
                 </ul>
             </div>
             <button @click="toggleShowBooks">
