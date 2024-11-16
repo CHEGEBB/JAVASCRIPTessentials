@@ -3,14 +3,20 @@
     <h1>{{title}}</h1>
     <input type="text" ref="name">
     <button @click="handleClick">Click me</button>
+    <Modal header="Signup for the giveaway!" text="Shop on Time this black novemeber and get free giveaways"/>
     </div>
  
 </template>
 
 <script>
+import Modal from './components/Modal.vue'
+
 
 export default {
   name: 'App',
+  components: {
+    Modal
+  },
   data (){
     return{
       title: 'My First Vue app'
@@ -20,6 +26,7 @@ export default {
     handleClick (){
       console.log(this.$refs.name)
       this.$refs.name.classList.add('active')
+      this.$refs.name.focus()
     }
 
   }
@@ -34,6 +41,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  margin: 0 auto;
+
 }
 h1{
   color: red;
@@ -44,4 +53,5 @@ h1{
   cursor: pointer;
   border-bottom: 2px solid #ccc;
 }
+
 </style>
