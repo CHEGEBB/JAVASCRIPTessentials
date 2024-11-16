@@ -25,7 +25,7 @@
 
     </div>
     <div v-if="showModal2">
-      <Modal theme="sale" @close="toggleShowModal2">
+      <Modal theme="grab" @close="toggleShowModal2">
         <template v-slot:links>
           <a href="#">Shop Now🥳</a>
           <a href="#">Contact us</a>
