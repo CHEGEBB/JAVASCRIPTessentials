@@ -8,7 +8,7 @@
 
 
 
-    <div v-if="showModal">
+    <teleport to=".modals" v-if="showModal">
       <!-- slots -->
       <Modal  theme="sale" @close="toggleShowModal">
         <template v-slot:links>
@@ -21,10 +21,10 @@
         <p>
           Get a 10% discount on your next purchase when you purchase at least $100.
         </p>
-        </Modal >
+      </Modal >
 
-    </div>
-    <div v-if="showModal2">
+    </teleport>
+    <teleport to=".modals" v-if="showModal2">
       <Modal theme="grab" @close="toggleShowModal2">
         <template v-slot:links>
           <a href="#">Shop Now🥳</a>
@@ -33,7 +33,7 @@
         <h1>This Year we have exclusive discounts all of november</h1>
         <p>Get insane discounts,coupons and vouchers when you shop with us</p>
       </Modal>
-    </div>
+    </teleport>
     </div>
  
 </template>
@@ -75,7 +75,7 @@ export default {
 </script>
 
 <style>
-#app {
+#app, .modals {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
