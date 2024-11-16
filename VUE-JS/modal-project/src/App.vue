@@ -3,8 +3,11 @@
     <h1>{{title}}</h1>
     <input type="text" ref="name">
     <button @click="handleClick">Click me</button>
-    <Modal :header="header" :text="text" theme="sale" v-if="showModal"/>
     <button @click="toggleShowModal">Show Modal</button>
+
+    <div v-if="showModal">
+      <Modal :header="header" :text="text" theme="sale" />
+    </div>
     </div>
  
 </template>
