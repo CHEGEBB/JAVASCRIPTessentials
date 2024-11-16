@@ -3,7 +3,7 @@
     <h1>{{title}}</h1>
     <input type="text" ref="name">
     <button @click="handleClick">Click me</button>
-    <Modal header="Signup for the giveaway!" text="Shop on Time this black novemeber and get free giveaways"/>
+    <Modal header="Signup for the giveaway!" text="Shop on Time this black november and get free giveaways"/>
     </div>
  
 </template>
