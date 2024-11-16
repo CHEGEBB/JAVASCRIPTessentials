@@ -3,7 +3,7 @@
     <h1>{{title}}</h1>
     <input type="text" ref="name">
     <button @click="handleClick">Click me</button>
-    <Modal header="Signup for the giveaway!" text="Shop on Time this black november and get free giveaways"/>
+    <Modal :header="header" :text="text"/>
     </div>
  
 </template>
@@ -19,7 +19,9 @@ export default {
   },
   data (){
     return{
-      title: 'My First Vue app'
+      title: 'My First Vue app',
+      header: 'Signup for the giveaway!',
+      text: 'Sign up now and win a free trip to the moon!'
   }
   },
   methods: {
