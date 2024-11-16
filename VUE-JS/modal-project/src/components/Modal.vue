@@ -3,7 +3,9 @@
     <div class="backdrop" @click.self="closeModal">
         <div class="modal" :class="{ sale : theme === 'sale'}">
             <slot></slot>
-            <div class="actions"></div>
+            <div class="actions">
+                <slot name="links"></slot>
+            </div>
         </div>
     </div>
 </template>
@@ -53,6 +55,40 @@ export default{
 .modal.sale h1 {
     color: white;
 }
+.modal .actions{
+    text-align: center;
+    margin:30px 0 10px 0;
+    color: #333;
+}
+   .modal .actions a{
+    margin: 10px;
+    padding: 10px 20px;
+    background: #03cfb4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+   }
+   .modal.sale.actions{
+    color: white;
+    text-decoration: none;
+   }
+   .modal.sale.actions a{
+    background:slateblue;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+   }
 
    .backdrop{
     position: fixed;

@@ -1,9 +1,12 @@
 <template>
   <div >
     <h1>{{title}}</h1>
-    <input type="text" ref="name">
-    <button @click="handleClick">Click me</button>
-    <button @click="toggleShowModal">Show Modal</button>
+    <input type="text" ref="name"><br>
+    <button @click="handleClick">Click me</button><br>
+    <button @click="toggleShowModal">Show Modal1</button><br>
+    <button @click="toggleShowModal2">Show Modal2</button><br>
+
+
 
     <div v-if="showModal">
       <!-- slots -->
@@ -18,8 +21,18 @@
         <p>
           Get a 10% discount on your next purchase when you purchase at least $100.
         </p>
-        </Modal>
+        </Modal >
 
+    </div>
+    <div v-if="showModal2">
+      <Modal theme="sale" @close="toggleShowModal2">
+        <template v-slot:links>
+          <a href="#">Shop Now🥳</a>
+          <a href="#">Contact us</a>
+        </template>
+        <h1>This Year we have exclusive discounts all of november</h1>
+        <p>Get insane discounts,coupons and vouchers when you shop with us</p>
+      </Modal>
     </div>
     </div>
  
@@ -40,6 +53,8 @@ export default {
       header: 'Signup for the giveaway!',
       text: 'Sign up now and win a free trip to the moon!',
       showModal : false,
+      showModal2 : false,
+  
   }
   },
   methods: {
@@ -50,7 +65,10 @@ export default {
     },
     toggleShowModal(){
       this.showModal =!this.showModal
-    }
+    },
+    toggleShowModal2(){
+      this.showModal2 =!this.showModal2
+    },
 
   }
 }
