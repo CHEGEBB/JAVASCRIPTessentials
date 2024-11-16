@@ -1,5 +1,5 @@
 <template>
-    <h1>My First Vue</h1>
+    <h1>{{title}}</h1>
  
 </template>
 
@@ -7,7 +7,10 @@
 
 export default {
   name: 'App',
-  components: {
+  data (){
+    return{
+      title: 'My First Vue app'
+  }
   }
 }
 </script>
