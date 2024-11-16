@@ -6,7 +6,20 @@
     <button @click="toggleShowModal">Show Modal</button>
 
     <div v-if="showModal">
-      <Modal :header="header" :text="text" theme="sale" />
+      <!-- slots -->
+      <Modal  theme="sale" @close="toggleShowModal">
+        <template v-slot:links>
+          <a href="#">Sign up Now!</a>
+          <a href="#">Learn more</a>
+        </template>
+        <h1>
+          Join us for this years black friday Deals!
+        </h1>
+        <p>
+          Get a 10% discount on your next purchase when you purchase at least $100.
+        </p>
+        </Modal>
+
     </div>
     </div>
  
