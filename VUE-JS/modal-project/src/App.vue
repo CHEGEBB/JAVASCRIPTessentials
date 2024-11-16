@@ -3,7 +3,8 @@
     <h1>{{title}}</h1>
     <input type="text" ref="name">
     <button @click="handleClick">Click me</button>
-    <Modal :header="header" :text="text"/>
+    <Modal :header="header" :text="text" theme="sale" v-if="showModal"/>
+    <button @click="toggleShowModal">Show Modal</button>
     </div>
  
 </template>
@@ -21,7 +22,8 @@ export default {
     return{
       title: 'My First Vue app',
       header: 'Signup for the giveaway!',
-      text: 'Sign up now and win a free trip to the moon!'
+      text: 'Sign up now and win a free trip to the moon!',
+      showModal : false,
   }
   },
   methods: {
@@ -29,6 +31,9 @@ export default {
       console.log(this.$refs.name)
       this.$refs.name.classList.add('active')
       this.$refs.name.focus()
+    },
+    toggleShowModal(){
+      this.showModal =!this.showModal
     }
 
   }
@@ -54,6 +59,10 @@ h1{
   transition: color 0.5s;
   cursor: pointer;
   border-bottom: 2px solid #ccc;
+}
+button{
+  position: relative;
+  z-index: 1000;
 }
 
 </style>
