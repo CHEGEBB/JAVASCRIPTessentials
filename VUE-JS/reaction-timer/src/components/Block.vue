@@ -23,6 +23,9 @@ export default {
     updated (){
         console.log("Updated Block");
     },
+    unmounted (){
+        console.log("Unmounted Block");
+    }
 
 }
 </script>
