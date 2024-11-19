@@ -15,13 +15,20 @@
                 <option value="Designer">Designer</option>
             </select>
 
+            <label>Skills:</label>
+            <input type="text"  v-model="tempSkill" placeholder="e.g. JavaScript, React, Vue.js" @keyup="addSkill">
+            <div v-for="skill in skills" :key="skill" class="pill">
+                {{ skill }}
+            </div>
+
             <div class="terms">
                 <input type="checkbox" required v-model="terms">
                 <label>
                     I agree to the <a href="#" target="_blank">terms and conditions</a>
                 </label>
             </div>
-            <div>
+
+            <!-- <div>
                 <input type="checkbox" value="chege" v-model="names">
                 <label>Chege</label>
             </div>
@@ -32,13 +39,13 @@
             <div>
                 <input type="checkbox" value="joy" v-model="names">
                 <label>Joy</label>
-            </div>
+            </div> -->
         </form>
         <p>Email:{{ email }}</p>
         <p>Password: {{ password }}</p>
         <p>Role: {{ role }}</p>
         <p>Terms and conditions: {{ terms }}</p>
-        <p>Names: {{ names }}</p>
+        <!-- <p>Names: {{ names }}</p> -->
 
     </div>
 </template>
@@ -50,8 +57,18 @@ export default {
             password: '',
             role: '',
             terms: false,
-            names: [],
+            // names: [],
+            tempSkill: '',
+            skills: [],
         }
+    },
+    methods:{
+        addSkill(e){
+            if(e.key === ',' && this.tempSkill){
+                this.skills.push(this.tempSkill);
+                this.tempSkill = '';
+            }
+        },
     },
 
 }
