@@ -16,9 +16,9 @@
             </select>
 
             <label>Skills:</label>
-            <input type="text"  v-model="tempSkill" placeholder="e.g. JavaScript, React, Vue.js" @keyup="addSkill">
+            <input type="text"  v-model="tempSkill" placeholder="e.g. JavaScript, React, Vue.js" @keyup.alt="addSkill">
             <div v-for="skill in skills" :key="skill" class="pill">
-                {{ skill }}
+                <span>{{skill}}</span>
             </div>
 
             <div class="terms">
@@ -65,7 +65,9 @@ export default {
     methods:{
         addSkill(e){
             if(e.key === ',' && this.tempSkill){
-                this.skills.push(this.tempSkill);
+                if(!this.skills.includes(this.tempSkill)){
+                    this.skills.push(this.tempSkill);
+                }
                 this.tempSkill = '';
             }
         },
@@ -112,5 +114,17 @@ input[type="checkbox"] {
     margin: 0 10px 0 0;
     position: relative;
     top: 2px;
+}
+.pill{
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    padding: 6px 12px;
+    background: #eee;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #777;
 }
 </style>
