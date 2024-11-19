@@ -17,12 +17,15 @@
 
             <div class="terms">
                 <input type="checkbox" required v-model="terms">
-                I agree to the <a href="#" target="_blank">terms and conditions</a>
+                <label>
+                    I agree to the <a href="#" target="_blank">terms and conditions</a>
+                </label>
             </div>
         </form>
         <p>Email:{{email}}</p>
         <p>Password: {{password}}</p>
         <p>Role: {{role}}</p>
+        <p>Terms and conditions: {{terms}}</p>
         
     </div>
 </template>
