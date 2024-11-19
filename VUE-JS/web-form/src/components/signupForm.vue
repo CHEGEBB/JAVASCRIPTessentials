@@ -1,4 +1,4 @@
-<template >
+<template>
     <div>
         <form>
             <label>Email:</label>
@@ -21,38 +21,53 @@
                     I agree to the <a href="#" target="_blank">terms and conditions</a>
                 </label>
             </div>
+            <div>
+                <input type="checkbox" value="chege" v-model="names">
+                <label>Chege</label>
+            </div>
+            <div>
+                <input type="checkbox" value="phil" v-model="names">
+                <label>Phil</label>
+            </div>
+            <div>
+                <input type="checkbox" value="joy" v-model="names">
+                <label>Joy</label>
+            </div>
         </form>
-        <p>Email:{{email}}</p>
-        <p>Password: {{password}}</p>
-        <p>Role: {{role}}</p>
-        <p>Terms and conditions: {{terms}}</p>
-        
+        <p>Email:{{ email }}</p>
+        <p>Password: {{ password }}</p>
+        <p>Role: {{ role }}</p>
+        <p>Terms and conditions: {{ terms }}</p>
+        <p>Names: {{ names }}</p>
+
     </div>
 </template>
 <script>
 export default {
-    data (){
-        return{
+    data() {
+        return {
             email: '',
             password: '',
             role: '',
             terms: false,
+            names: [],
         }
     },
-    
+
 }
 </script>
 <style>
-form{
+form {
     width: 420px;
-    margin:30px auto;
+    margin: 30px auto;
     text-align: left;
     background: white;
     padding: 40px;
     border-radius: 10px;
 
 }
-label{
+
+label {
     display: inline-block;
     color: #aaa;
     margin: 25px 0 15px;
@@ -62,8 +77,10 @@ label{
     font-weight: bold;
 
 }
-input, select{
-    display:block;
+
+input,
+select {
+    display: block;
     padding: 10px 6px;
     width: 100%;
     box-sizing: border-box;
@@ -71,12 +88,12 @@ input, select{
     border-bottom: 1px solid #ddd;
     color: #555;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     display: inline-block;
     width: 16px;
     margin: 0 10px 0 0;
     position: relative;
     top: 2px;
 }
-    
 </style>
