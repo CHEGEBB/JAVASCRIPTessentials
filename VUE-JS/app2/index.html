@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Vue</title>
     <script src="https://unpkg.com/vue@3.0.2"></script>
-    <style >
-        .box{
+    <style>
+        .box {
             width: 300px;
             height: 300px;
             background-color: lightgray;
             margin: 20px;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             display: inline-block;
         }
-        ul{
+
+        ul {
             justify-content: space-between;
             gap: 20px;
         }
-        li{
+
+        li {
             height: 190px;
             padding: 20px;
             display: flex;
             flex-direction: row;
         }
-        li img{
+
+        li img {
             width: 180px;
             height: 180px;
         }
-        .fav{
+
+        .fav {
             background-color: blueviolet;
 
-           
+
         }
-        .fav  img{
-                width: 200px;
-                height: 200px;
-            }
-        
+
+        .fav img {
+            width: 200px;
+            height: 200px;
+        }
     </style>
 </head>
+
 <body>
     <h1>Hello, Vue ;)</h1>
-        <div id="app" class="app">
-            <a v-bind:href="url">Best Website In the Freakin World</a><br>
-            <a :href="url">Best Website2 In the Freakin World</a>
+    <div id="app" class="app">
+        <a v-bind:href="url">Best Website In the Freakin World</a><br>
+        <a :href="url">Best Website2 In the Freakin World</a>
 
-            <div v-if="showBooks">
-                <ul>
-                    <li v-for="book in books" :class="{fav : book.isFav} " @click="toggleIsFav(book)" >
-                        
-                        <img :src="book.img" :alt="book.title"/>
-                        <h3>{{book.title}}</h3>
-                        <p>{{book.author}}</p>
-                        <p>{{book.pages}}</p>
-                    </li>
-                </ul>
-            </div>
-            <button @click="toggleShowBooks">
-                <span v-if="showBooks">Hide Books</span>
-                <span v-if="!showBooks">Show Books</span>
-                <!-- also we can use -->
-                 <!-- <span v-else>Show Books</span> -->
+        <div v-if="showBooks">
+            <ul>
+                <li v-for="book in books" :class="{fav : book.isFav} " @click="toggleIsFav(book)">
 
-            </button><br>
-            <!-- <span v-show="showBooks">Currently Showing books</span> -->
+                    <img :src="book.img" :alt="book.title" />
+                    <h3>{{book.title}}</h3>
+                    <p>{{book.author}}</p>
+                    <p>{{book.pages}}</p>
+                </li>
+            </ul>
+        </div>
+        <button @click="toggleShowBooks">
+            <span v-if="showBooks">Hide Books</span>
+            <span v-if="!showBooks">Show Books</span>
+            <!-- also we can use -->
+            <!-- <span v-else>Show Books</span> -->
 
-            <div class="box" @mouseover="handleEvent">mouseover (enter)</div>
-            <div class="box" @mouseleave="handleEvent">mouseleave</div>
-            <div class="box" @dblclick="handleEvent">double click</div>
-            <div class="box"@mousemove="handleMouseMove">Position -{{x}} - {{y}}</div>
+        </button><br>
+        <!-- <span v-show="showBooks">Currently Showing books</span> -->
+
+        <div class="box" @mouseover="handleEvent">mouseover (enter)</div>
+        <div class="box" @mouseleave="handleEvent">mouseleave</div>
+        <div class="box" @dblclick="handleEvent">double click</div>
+        <div class="box" @mousemove="handleMouseMove">Position -{{x}} - {{y}}</div>
 
 
-            <!-- <button v-on:click="age++">
+        <!-- <button v-on:click="age++">
                 Increase age
             </button>
 
@@ -85,10 +91,17 @@
             <div  @click=" changeTitle">
                 Change book title
             </div> -->
-         </div>
+        <form v-on:submit.prevent="addItem">
+            <p>Add Item :</p>
+            <p>Item name: <input type="text" required v-model="itemName"></p>
+            <p>How many: <input type="number" v-model="itemNumber"></p>
+            <button type="submit">Add item</button>
+        </form>
+    </div>
 
 
-     <script src="./app.js"></script>
-   
+    <script src="./app.js"></script>
+
 </body>
+
 </html>

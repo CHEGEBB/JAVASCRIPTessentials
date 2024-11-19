@@ -4,6 +4,11 @@ const app = Vue.createApp({
         return {
             url : 'https://chegebb.github.io/My-portfolio-website/',
             showBooks: true,
+            itemName: null,
+            itemNumber: null,
+            shopppingList : [
+                {name: 'Apple', number: 5},
+            ],
             books : [
                 {title: 'The Catcher in the Rye', author: 'J.D. Salinger', pages: 276, img : './assets/1.jpeg',isFav: true,},
                 {title: 'To Kill a Mockingbird', author: 'Harper Lee', pages: 297 , img : './assets/2.jpeg',isFav: false,},

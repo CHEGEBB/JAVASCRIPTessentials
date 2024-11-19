@@ -1,5 +1,5 @@
 <template>
-  <div class="block" v-if="showBlock">
+  <div class="block" v-if="showBlock" @click="stopTimer">
     Click Me
   </div>
 </template>
@@ -10,7 +10,10 @@ export default {
 
     data (){
         return {
-            showBlock: false
+            showBlock: false,
+            timer:null,
+            reactionTime:0
+            ,
         }
     },
     mounted (){
@@ -20,12 +23,24 @@ export default {
             console.log("The delay is:", this.delay);
         }, this.delay);
     },
-    updated (){
-        console.log("Updated Block");
+    // updated (){
+    //     console.log("Updated Block");
+    // },
+    // unmounted (){
+    //     console.log("Unmounted Block");
+    // }
+    methods :{
+        startTimer (){
+            this.timer = setInterval(()=>{
+                this.reactionTime += 10
+            },10)
+
+        },
+        stopTimer (){
+            clearInterval(this.timer)
+            console.log(this.reactionTime)
+        },
     },
-    unmounted (){
-        console.log("Unmounted Block");
-    }
 
 }
 </script>
