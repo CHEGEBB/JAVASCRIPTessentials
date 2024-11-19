@@ -26,6 +26,13 @@ const app = Vue.createApp({
         toggleShowBooks (){
             this.showBooks =!this.showBooks
         },
+        addItem (){
+            if(this.itemName && this.itemNumber){
+                this.shopppingList.push({name: this.itemName, number: this.itemNumber})
+                this.itemName = null
+                this.itemNumber = null
+            }
+        },
         handleEvent(e){
             console.log('event', e.type)
         },
