@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "price": 59.99,
+      "image": "https://via.placeholder.com/150/0000FF/FFFFFF?text=Headphones",
+      "description": "High-quality wireless headphones with noise cancellation."
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch",
+      "price": 129.99,
+      "image": "https://via.placeholder.com/150/008000/FFFFFF?text=Smart+Watch",
+      "description": "Stylish smart watch with health tracking features."
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Speaker",
+      "price": 39.99,
+      "image": "https://via.placeholder.com/150/FF0000/FFFFFF?text=Speaker",
+      "description": "Portable Bluetooth speaker with excellent sound quality."
+    },
+    {
+      "id": 4,
+      "name": "Gaming Mouse",
+      "price": 24.99,
+      "image": "https://via.placeholder.com/150/FFA500/FFFFFF?text=Gaming+Mouse",
+      "description": "Ergonomic gaming mouse with customizable buttons."
+    },
+    {
+      "id": 5,
+      "name": "Laptop Backpack",
+      "price": 49.99,
+      "image": "https://via.placeholder.com/150/800080/FFFFFF?text=Backpack",
+      "description": "Durable laptop backpack with multiple compartments."
+    }
+  ]
+  
